@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.flex div {
+    border: 3px solid #000;
+    margin: 5px;
+    }
+
+.flex img {
+    max-width: 200px;
+}
+p {
+    width: 100px;
+}

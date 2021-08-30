@@ -1,0 +1,187 @@
+/*resetar tamanhos dos navegadores*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+            }
+
+/*corpo do projeto*/
+    body {
+        background: linear-gradient(90deg,#234380, #0075b6, #00a5b6, #00ce7d, #a8eb12) no-repeat center center fixed;
+        background-size: cover;
+        color:rgb(160, 160, 113);
+    font-family:'Lagosta', cursiva, 'Open Sans', sans-serif, 'Roboto', sans-serif;
+            }
+
+/*cabeçalho do projeto*/
+    header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 25px 1px black;
+    margin-bottom: 45px;
+}
+
+header ul {
+    display: flex;
+        }
+
+header ul li{
+    padding: 10px;
+}
+
+header ul li a:hover {
+    transition: 600ms;
+}
+
+header ul li a:hover {
+    color:crimson;
+}
+
+ul {
+    list-style: none;
+        font-style: italic;
+        font-size: 20px;
+    }
+
+a{
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.FotoPerfil img {
+    width: 100px;
+}
+
+.container{
+    text-align:center;
+    color: white;
+}
+.container .name h1 {
+    font-size: 50px;
+            }
+
+.container .name h5 {
+        font-size: 15px;
+        font-style: italic;
+        padding: 10px;
+        }
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation:blink 1s steps(5, start) infinite;
+    }
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+    }
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+    }
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 15px
+    }
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+        }
+
+.flex div {
+    border: 3px solid #000;
+    margin: 5px;
+    max-width: 30%;
+    padding: 5px;
+    height: 280px;
+    }
+            
+.flex img {
+    max-width: 200px;
+    padding-bottom: 15px;
+    }
+
+/*final do projeto*/
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30 px;
+    padding: 20px;
+    }
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    }
+
+.form button {
+    width: 20%;
+    color:black;
+    font-style: italic;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor:pointer;
+    transition: 300ms;
+    background-color:darkorange;
+    border: none;
+    border-radius: 0px epx 5px 0px;
+    margin-left: -5px;
+    margin-top:25px;
+    }
+
+.form button:hover {
+    background-color:crimson;
+    color:yellow;
+     }
+
+      /*adaptação para diversos tipos de tela*/
+     
+      @media only screen and(max-width: 768px) {
+        .form {
+            width: 100%;
+        }
+
+        .container .flex {
+            width: 100%;
+                }
+    }
+    
+    @media only screen and(max-width: 480px) {
+       .container .name h1 {
+           font-size: 30px;
+       }
+    
+       .container .name h5 {
+           font-size: 15px;
+       }
+    
+       #about p {
+           max-width: 80%;
+           text-align: justify;
+       }
+           }  
+    
+        .container .flex {
+            width: 100%;
+        }

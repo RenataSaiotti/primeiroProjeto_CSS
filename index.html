@@ -1,0 +1,107 @@
+<html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https: //fonts.googleapis.com/css2? family = Lobster & family = Abrir + Sans: ital, wght @ 1.600 & family = Roboto: ital, wght @ 0,400; 1,900 & display = swap "
+        rel=" stylesheet ">
+    <link rel="stylesheet" href="styles.css">
+    <title>Renata Ferreira</title>
+</head>
+
+<body>
+    <header>
+        <div class="FotoPerfil">
+            <img src="./renataf.png" alt="Logo Renata Ferreira">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/renatasaiotti/">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/renata-ferreira-96183970">linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:renoveferreira@gmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/11964773554">whatsapp</a>
+            </li>
+
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Renata Ferreira</h1>
+                <h5>Carreira em evolução em Tecnologia e Psicologia</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none" id="about">
+                <p>
+                    Sou uma pessoa apaixonada por educação, processo de ensino-aprendizagem, gestão de pessoas e
+                    tecnologia. Também amo trabalhar com projetos e participar de programas voluntariados. Acredito que
+                    minha missão é fazer a diferença na vida das pessoas, transformando vidas.
+                    Através de meus conhecimentos, habilidades, atitudes e experiências contribui e ainda contribuo
+                    significativamente no desenvolvimento humano.
+                    Espero continuar a impactar positivamente a vida de milhares de pessoas, além de evoluir e
+                    amadurecer profissionalmente e pessoalmente.
+                </p>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <img src="./logore.png" alt="Logo Renove">
+                    <p> Proprietária da empresa R9 - Renove Ferreira Serviços, com sede no município de Mairinque/SP,
+                        fundada em agosto de 2018, é uma empresa prestadora de serviços administrativos e educacionais.
+                    </p>
+                </div>
+                <div>
+                    <img src="./gama.png" alt="Logo Gama">
+                    <p>Participante aprovada no Programa de Bolsas da Star Tech com parceria da Gama Academy e Ambev,
+                        iniciante nesta área de tecnologia e com grandes expectativas para projetos nesta área.</p>
+                </div>
+                <div>
+                    <img src="./psicologia1.png" alt="Logo Psicologia">
+                    <p>Carreira em evolução na área de psicologia na FAC São Roque, mas com experiências profissionais e
+                        acadêmicas na área de exatas e humanas. <br> "Aprender é a única coisa de que a mente nunca se cansa,
+                        nunca tem medo e nunca se arrepente" - Leonardo da Vinci"</p>
+                </div>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato !</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Digite seu email">
+                    <button>Enviar !</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
